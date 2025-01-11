@@ -12,7 +12,8 @@ Prints numbers 0-n (inclusive) in a spiral like this:
 
 This is a solution to an interview problem proposed by Peter Yee from The Trade
 Desk. I thought of a better solution after the interview and decided to explore
-it here.
+it here. In particular, the solution I gave in the interview used O(n^2) memory,
+and this should use O(n) (or O(1) if you get rid of the caching).
 
 ## To Run
 
