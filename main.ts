@@ -125,7 +125,7 @@ function formatStr(val: number, maxVal: number): string {
   return String(val);
 }
 
-function printSpiral(maxNum: number): void {
+export function printSpiral(maxNum: number): void {
   const shape = layersPerRegion(maxNum);
   const width = shape[Region.LEFT] + shape[Region.RIGHT] + 1;
   const height = shape[Region.BOTTOM] + shape[Region.TOP] + 1;
@@ -191,8 +191,3 @@ function printSpiral(maxNum: number): void {
     console.log(row.map((num) => formatStr(num, maxNum)).join("\t"));
   }
 }
-
-// printSpiral(8);
-// console.log();
-// printSpiral(9);
-printSpiral(18);
